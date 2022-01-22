@@ -14,7 +14,7 @@
             <a href="index.php"><img class="logo" src="images\logo.png"></a>
             <a href="index.php">Парковые территории Москвы</a>
             <a class="right" href="index.php">Главная</a>
-            <a class="right" href="">Списки</a>
+            <a class="right" href="areas.php">Округа</a>
             <a class="right" href="">Где мне погулять?</a>
         </nav>
     </div>
@@ -24,13 +24,17 @@
     <div class="container">
         <section id="about">
             <h1>О нас</h1>
-            Хочешь гулять, но не знаешь где? Тогда ты попал по адресу!
-            <?=$content?>
-            <div class="text-right">
-                <a class="btn" href="page.php">Подробнее</a>
-            </div>
+            <p>Хочешь гулять, но не знаешь где? Тогда ты попал по адресу!</p>
+            
         </section>
     </div>
+    
+    <section >
+    <div class="container">
+            <?=$content?>
+    </div>
+    </section>
+    
 </main>
 
 <footer class="footer">
