@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Oswald|Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш 65f3752a-ad48-4a8e-a9ee-ff949a3f99ef&lang=ru_RU" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    
 </head>
 <body>
 <header class="header">
@@ -14,7 +17,7 @@
             <a href="index.php"><img class="logo" src="images\logo.png"></a>
             <a href="index.php">Парковые территории Москвы</a>
             <a class="right" href="index.php">Главная</a>
-            <a class="right" href="">Списки</a>
+            <a class="right" href="areas.php">Округа</a>
             <a class="right" href="">Где мне погулять?</a>
         </nav>
     </div>
@@ -24,13 +27,20 @@
     <div class="container">
         <section id="about">
             <h1>О нас</h1>
-            Хочешь гулять, но не знаешь где? Тогда ты попал по адресу!
-            <?=$content?>
-            <div class="text-right">
-                <a class="btn" href="page.php">Подробнее</a>
-            </div>
+            <p>Хочешь гулять, но не знаешь где? Тогда ты попал по адресу!</p>
         </section>
     </div>
+
+    <div id="map" style="width: 600px; height: 400px">
+    
+        
+    </div>
+
+    <div class="container">
+            <?=$content?>
+    </div>
+    </section>
+    
 </main>
 
 <footer class="footer">
